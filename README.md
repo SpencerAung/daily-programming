@@ -1,2 +1,3 @@
-# blue-water
-Template repository for JS
+# Daily Programming Challenges
+
+
