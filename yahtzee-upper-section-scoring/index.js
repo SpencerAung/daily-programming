@@ -3,9 +3,7 @@ const _ = require('ramda')
 
 const greater = (a, b) => a > b ? a : b
 const max = _.reduce(greater, -Infinity)
-const count = _.reduce((acc, cur) => {
-  return { ...acc, [cur]: (acc[cur] || 0) + 1 }
-}, {})
+const count = _.reduce((acc, cur) => ({ ...acc, [cur]: (acc[cur] || 0) + 1 }), {})
 const timesPair = ([key, value]) => parseInt(key) * value
 
 /**
