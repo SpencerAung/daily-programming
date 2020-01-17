@@ -1,0 +1,17 @@
+const solitaire = require('./index')
+
+const tests = [
+  '0100110',
+  '01001100111',
+  '100001100101000',
+  '001011011101001001000',
+  '1010010101001011011001011101111',
+  '1101110110000001010111011100110',
+  '010111111111100100101000100110111000101111001001011011000011000'
+]
+
+tests.forEach(test => {
+  console.group(test)
+  console.log('solution:', solitaire(test))
+  console.groupEnd()
+})
