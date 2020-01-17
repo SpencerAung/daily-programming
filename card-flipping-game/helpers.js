@@ -75,7 +75,7 @@ const parseOutput = result => result.length ? result.join(' ') : 'no solution'
 const hasSolution = input => input.indexOf(1) !== -1
 
 /**
- * Remove 1s and flip adjacents 0s into 1s. Repeats utils every item is removed.
+ * Remove 1s and flip adjacents items. Repeats utils every item is removed.
  * If there are no more 1s to remove and 0 still remains, it has no solution.
  * In this of no solution, returns an empty array
  * If there is a solution, returns the index of 1s removed in their removed order.
