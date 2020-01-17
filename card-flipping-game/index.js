@@ -18,6 +18,9 @@ const flip = _.curry((cur, input) => input.map((v, i) => {
  * @example
  * // returns ''
  * safeInput(null)
+ * @exmaple
+ * // returns '0101'
+ * safeInput('0101')
  */
 const safeInput = (input) => {
   if (!input) {
