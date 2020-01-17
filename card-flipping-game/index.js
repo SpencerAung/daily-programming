@@ -81,7 +81,7 @@ const hasSolution = input => input.indexOf(1) !== -1
  * // returns []
  * _solitaire([0,0,'.'])
  * @example
- * returns [1,0,2,3]
+ * // returns [1,0,2,3]
  * _solitaire([0,1,0,1])
  */
 function _solitaire (input, cur = 0, steps = []) {
